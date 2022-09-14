@@ -1,0 +1,11 @@
+<h1>Post Detail</h1>
+
+<h2>{{post}}</h2>
+<p>{{post.content}}</p>
+<img src="{{post.image.url}}" alt="">
+<hr>
+<a href="{%url 'blog:post_edit' post.id%}">Edit Post</a>
+<br>
+<a href="{%url 'blog:post_delete' post.id%}">Delete Post</a>
+<hr>
+<a href="{%url 'blog:post_list'%}">Home</a>
